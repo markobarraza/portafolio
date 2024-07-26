@@ -1,0 +1,51 @@
+.my_navbar2{
+    width: 80px;
+    background-color: black;
+    position: relative;
+    // background-color: #eccd1c;
+    
+    // position: fixed;
+    z-index: 100;
+    .logo{
+        width: 90px;
+        height: 90px;
+        margin: 30px 0 0 30px;
+        border-radius: 50px;
+        position: fixed;
+        z-index: 100;
+        .img-logo{
+            position: absolute;
+            height: 100%;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            border: solid 3px white;
+        }
+    }
+    .header_icon{
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        .container-icon {
+            display: block;
+            padding: 5px 0;
+            border-top: solid 1px #353535;
+            border-bottom: solid 1px #353535;
+            &:hover{
+                background-color: white;
+                color: white;
+                .my_icon{
+                    color: black;
+                }
+            }
+            .my_icon{
+                color: white;
+                display: block;
+                font-size: 35px;
+                margin: 20px auto 20px auto;
+            }
+        }
+    }
+}

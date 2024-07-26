@@ -1,116 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179232459-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-179232459-1');
+	</script>
+
 	<meta charset="UTF-8">
 	<title>Marco Barraza | Portafolio</title>
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
 	<!-- Compiled and minified CSS -- materialize -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<!-- Main Style -->
+	<!-- Font awesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<!-- Google font | Ubuntu -->
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+	<!-- Style -->
 	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
 </head>
-<body>
+
+
+<body class="hidden">
+	<!-- Pre-loader -->
+	<div id="loader" class="center-loader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<!-- Modal Structure -->
+	<div id="modal1" class="modal bottom-sheet">
+	  <div class="modal-content">
+		<h4>Envíame un correo</h4>
+		<h2>marko.barraza@gmail.com</h2>
+	  </div>
+	  <div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat btn-salir">Salir</a>
+	  </div>
+	</div>
 
 	<!-- header -->
-	<nav class="my_navbar2">
-		<div class="logo">
-			<img class="responsive-img img-logo" src="img/logo_mb.png" alt="Logo | MB">
+	<div class="container-full">
+		<div class="my_navbar2">
+			<div class="logo">
+				<img class="responsive-img img-logo" src="img/yo.jpg" alt="Logo | MB">
+			</div>
+			<div class="header_icon">
+				<a href="#modal1" class="container-icon modal-trigger zoom">
+					<i class="far fa-envelope my_icon"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/marco-barraza/" target="_blank" class="container-icon modal-trigger zoom">
+					<i class="fab fa-linkedin-in my_icon"></i>
+				</a>
+				<a href="https://github.com/markobarraza" target="_blank" class="container-icon modal-trigger zoom">
+					<i class="fab fa-github my_icon"></i>
+					
+				</a>
+			</div>
 		</div>
-		<div class="header_icon">
-			<a href="https://www.linkedin.com/in/marco-barraza/"><i class="fab fa-linkedin my_icon waves-effect waves-light"></i></a>
-			<a href="https://www.behance.net/markobarraza"><i class="fab fa-behance-square my_icon"></i></a>
-		</div>
-	</nav>
+		
+		
 
-	<!-- trabajos -->
-	<main>
-		<div class="my-container">
-			<div class="row">
-				<!-- Work 1 "Especial Muebles" -->
-				<div class="col s12 m6 container_works">
-					<a class="waves-effect waves-light work1 modal-trigger" href="#modal1">
-						<div class="box box_work_left">
-							<h2>Landing "Casa Joven"</h2>
-							<h3>Desarrollo Front End</h3>
+		<!-- trabajos 2020 -->
+		<div class="container-trabajos">
+			<!-- trabajo principal -->
+			<div class="container-header">
+				<a href="portafolio/gamer/index.html" target="_blank"  class="work">
+					<div class="title-work">
+						<h2>Gamer</h2>
+						<div class="line"></div>
+						<div class="tags">
+							<p class="tag-text">ui interface</p>
+							<p class="tag-text">htlm</p>
+							<p class="tag-text">css</p>
+							<p class="tag-text">sass</p>
+							<p class="tag-text">Materialize</p>
+							<p class="tag-text">js</p>
 						</div>
-						<img class="responsive-img image-work" src="img/work1.png" alt="Especial muebles | Front End">
-					</a>
-				</div>
-				<!-- Modal Structure -->
-				<div id="modal1" class="modal">
-					<div class="modal-content">
-						<a href="https://www.lapolar.cl/especial/casajoven/" target="blank_">
-							<img class="responsive-img" src="img/work1_modal.jpg" alt="">
-						</a>
 					</div>
-				</div>
-
-
-				<!-- Work 2 "Especial Smart TV" -->
-				<div class="col s12 m6 container_works">
-					<a class="waves-effect waves-light work2 modal-trigger" href="#modal2">
-						<div class="box box_work_left_mobile">
-							<h2>Landing "Especial Smart TV"</h2>
-							<h3>Diseño y Desarrollo Front End</h3>
-						</div>
-						<img class="responsive-img image-work" src="img/work2.png" alt="Especial muebles | Front End">
-					</a>
-				</div>
-				<!-- Modal Structure -->
-				<div id="modal2" class="modal">
-					<div class="modal-content">
-						<a href="https://www.lapolar.cl/especial/led/" target="blank_">
-							<img class="responsive-img" src="img/work2_modal.jpg" alt="">
-						</a>
-					</div>
+					<div class="btn-ver">ver</div>
+				</a>
+				<div class="work-1 gamer">
+					<div class="header-work"></div>
 				</div>
 			</div>
-		<div class="row">
-			<!-- Work 3 -->
-			<div class="col s12 m6 container_works">
-				<a class="waves-effect waves-light work3 modal-trigger" href="#modal3">
-						<div class="box box_work_left">
-							<h2>Sitio web "Ilustrador Carlos Semper"</h2>
-							<h3>Diseño UI</h3>
-						</div>
-						<img class="responsive-img image-work" src="img/work3.png" alt="Especial muebles | Front End">
-					</a>
-			</div>
-			<!-- Modal Structure -->
-				<div id="modal3" class="modal">
-					<div class="modal-content">
-						<a href="#">
-							<img class="responsive-img" src="img/work3_modal.jpg" alt="">
-						</a>
+			<!-- trabajo-2 -->
+			<div class="container-work">
+				<a href="https://markobarraza.github.io/ntg-sport/" target="_blank" class="work">
+					<div class="title-work">
+						<h2>NTG Sport</h2>
+						<div class="line"></div>
+						<div class="tags">
+							<p class="tag-text">ui interface</p>
+							<p class="tag-text">htlm</p>
+							<p class="tag-text">css</p>
+							<p class="tag-text">sass</p>
+							<p class="tag-text">Materialize</p>
+							<p class="tag-text">js</p>
+						</div>	
 					</div>
+					<div  class="btn-ver">ver</div>
+				</a>
+				<div class="work-1 ntg">
+					<div class="work-ntg"></div>
 				</div>
-
-			<!-- Work 4 "asesorias pimentel"  -->
-			<div class="col s12 m6 container_works">
-				<a class="waves-effect waves-light work4 modal-trigger" href="#modal4">
-						<div class="box box_work_left_mobile">
-							<h2>Sitio Web "Asesorias Pimentel"</h2>
-							<h3>Diseño y Desarrollo Front End | Wordpress</h3>
-						</div>
-						<img class="responsive-img image-work" src="img/work4.png" alt="Especial muebles | Front End">
-					</a>
 			</div>
-			<!-- Modal Structure -->
-				<div id="modal4" class="modal">
-					<div class="modal-content">
-						<a href="http://www.asesoriaspimentel.cl/" target="blank_">
-							<img class="responsive-img" src="img/work4_modal.jpg" alt="">
-						</a>
+			<!-- trabajo-3 -->
+			<div class="container-work">
+				<a href="portafolio/smart/index.html" target="_blank" class="work">
+					<div class="title-work">
+						<h2>Especial Smart</h2>
+						<div class="line"></div>
+						<div class="tags">
+							<p class="tag-text">htlm</p>
+							<p class="tag-text">css</p>
+							<p class="tag-text">sass</p>
+							<p class="tag-text">Materialize</p>
+							<p class="tag-text">js</p>
+						</div>
 					</div>
+					<div class="btn-ver">ver</div>
+				</a>
+				<div class="work-1 smart">
+					<div class="work-smart"></div>
 				</div>
+			</div>
+			<!-- trabajo-4 -->
+			<div class="container-work ">
+				<a href="portafolio/muebles/index.html" target="_blank" class="work">
+					<div class="title-work">
+						<h2>Mi Espacio</h2>
+						<div class="line"></div>
+						<div class="tags">
+							<p class="tag-text">htlm</p>
+							<p class="tag-text">css</p>
+							<p class="tag-text">sass</p>
+							<p class="tag-text">Materialize</p>
+							<p class="tag-text">js</p>
+						</div>
+					</div>
+					<div class="btn-ver">ver</div>
+				</a>
+				<div class="work-1 espacio">
+					<div class="work-espacio"></div>
+				</div>
+			</div>
+			<!-- trabajo-5 -->
+			<div class="container-work semper">
+				<a href="portafolio/semper/index.html" target="_blank" class="work">
+					<div class="title-work">
+						<h2>Carlos Semper</h2>
+						<div class="line"></div>
+						<div class="tags">
+							<p class="tag-text">ui interface</p>
+							<p class="tag-text">htlm</p>
+							<p class="tag-text">css</p>
+							<p class="tag-text">Bootstrap</p>
+							<p class="tag-text">js</p>
+						</div>
+					</div>
+					<div class="btn-ver">ver</div>
+				</a>
+				<div class="work-1 semper">
+					<div class="work-semper"></div>
+				</div>
+			</div>
 		</div>
-		</div>
-	</main>
-
-
-
-
+	</div>
 
 
 	<!-- Jquery -->

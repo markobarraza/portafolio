@@ -1,0 +1,64 @@
+body{
+    font-family: 'Ubuntu', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+// Modal contacto
+
+.modal-content{
+    max-width: 500px;
+    margin: 0 auto;
+    h4{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 40px;
+        @media (min-width: 320px) and (max-width: 767px){
+            font-size: 24px;
+        }
+    }
+}
+.modal-footer{
+    .btn-salir{
+        background-color: rgb(179, 32, 32);
+        color: white;
+    }
+}
+
+// Efecto Hover zoom
+.zoom {
+    transition: transform .2s;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
+    @media (min-width: 320px) and (max-width: 767px){
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+    }
+    &:hover{
+        transform: scale(1.20);
+        -webkit-transform: scale(1.20);
+        -moz-transform: scale(1.20);
+        -ms-transform: scale(1.20);
+        -o-transform: scale(1.20);
+        @media (min-width: 320px) and (max-width: 767px){
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+}
+.container-full{
+    width: 100%;
+    display: flex;
+}
+.hidden{
+    overflow: hidden;
+}
+@import '_preloader';
+@import '_header';
+@import '_works';

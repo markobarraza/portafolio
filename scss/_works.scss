@@ -1,0 +1,326 @@
+// trabajos
+.container-trabajos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .ntg{
+        background-color: #00b6aa;
+    }
+    .gamer{
+        background-color: #000d73;
+    }
+    .smart{
+        background-color: #ff4d50;
+    }
+    .espacio{
+        background-color: #9a99a7;
+    }
+    .semper{
+        background-color: #bf9586;
+    }
+    
+    .container-header{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        .work-1{
+            z-index: 5;
+            height: 100%;
+            width: 100%;
+            .img-work{
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 0px;
+            }
+            .header-work{
+                background-image: url(../img/gamer-header.png);
+                background-position: center center;
+                height: 400px;
+            }
+        }
+        .work{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 10;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6012604871049982) 100%); 
+            .title-work{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                h2{
+                    font-size: 30px;
+                    color: white;
+                    margin: 10px 0;
+                    padding: 0;
+                    text-align: right;
+                }
+                .line{
+                    position: absolute;
+                    right: 0;
+                    margin: 0;
+                    padding: 0;
+                    width: 20%;
+                    height: 5px;
+                    background-color: white;
+                }
+                .tags{
+                    margin-top: 20px;
+                    color: black; 
+                    text-transform: uppercase;
+                    display: inline-flex;
+                    font-size: 10px;
+                    font-weight: 500;
+                    @media (min-width: 320px) and (max-width: 500px){
+                        display: inherit;
+                        text-align: right;
+                    }
+                    .tag-text{
+                        background-color: #ffffff75;
+                        margin: 0 0 5px 5px;
+                        padding: 3px 10px;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        @media (min-width: 320px) and (max-width: 500px){
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .btn-ver{
+                color: white;
+                opacity: 0;
+            }
+            .btn-enlace{
+                opacity: 0;
+            }
+            &:hover{
+                background-color: #0000009d;
+                transition-duration: 0.4s;
+                .btn-ver{
+                    margin: 0 5px;
+                    font-weight: 500;
+                    font-size: 25px;
+                    border: 4px solid white;
+                    background-color: #ffffff27;
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    -ms-border-radius: 50px;
+                    -o-border-radius: 50px;
+                    opacity: 1;
+                    transition-duration: 0.4s;
+                    transition-timing-function: ease-in;
+                    &:hover{
+                        color: black;
+                        background-color: white;
+                        transition-duration: 0.2s;
+                        transition-timing-function: ease-in;
+                    }
+                }
+                .btn-enlace{
+                    margin: 0 5px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    background-color: white;
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    -ms-border-radius: 50px;
+                    -o-border-radius: 50px;
+                    opacity: 1;
+                    transition-duration: 0.4s;
+                    transition-timing-function: ease-in;
+                    &:hover{
+                        color: white;
+                        background-color: black;
+                        transition-duration: 0.2s;
+                        transition-timing-function: ease-in;
+                    }
+                }
+            }
+        }
+    }
+    .container-work{
+        width: 50%;
+        height: 400px;
+        position: relative;
+        @media (min-width: 501px) and (max-width: 900px){
+            height: 400px;
+        }
+        @media (min-width: 320px) and (max-width: 500px){
+            width: 100%;
+            overflow: hidden;
+            height: 400px;
+        }
+        .work-1{
+            z-index: 5;
+            height: 100%;
+            width: 100%;
+            .img-work{
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 0px;
+            }
+            .work-ntg{
+                background-image: url(../img/ntg.png);
+                background-position: center center;
+                background-size: cover;
+                height: 400px;
+                @media (min-width: 320px) and (max-width: 500px){
+                    background-position: left;
+                }
+            }
+            .work-smart{
+                background-image: url(../img/smart.png);
+                background-position: center center;
+                background-size: cover;
+                height: 400px;
+                @media (min-width: 320px) and (max-width: 500px){
+                    background-position: left;
+                }
+            }
+            .work-espacio{
+                background-image: url(../img/espacio.png);
+                background-position: center center;
+                background-size: cover;
+                height: 400px;
+                @media (min-width: 320px) and (max-width: 500px){
+                    background-position: left;
+                }
+            }
+            .work-semper{
+                background-image: url(../img/semper.png);
+                background-position: center center;
+                background-size: cover;
+                height: 400px;
+                @media (min-width: 320px) and (max-width: 500px){
+                    background-position: left;
+                }
+            }
+        }
+        .work{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 10;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6012604871049982) 100%); 
+            .title-work{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                h2{
+                    font-size: 20px;
+                    color: white;
+                    margin: 10px 0;
+                    padding: 0;
+                    text-align: right;
+                }
+                .line{
+                    position: absolute;
+                    right: 0;
+                    margin: 0;
+                    padding: 0;
+                    width: 20%;
+                    height: 5px;
+                    background-color: white;
+                }
+                .tags{
+                    margin-top: 20px;
+                    color: black; 
+                    text-transform: uppercase;
+                    display: inline-flex;
+                    font-size: 9px;
+                    font-weight: 500;
+                    @media (min-width: 320px) and (max-width: 500px){
+                        display: inherit;
+                        text-align: right;
+                    }
+                    .tag-text{
+                        background-color: #ffffff75;
+                        margin: 0 0 5px 5px;
+                        padding: 3px 10px;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        @media (min-width: 320px) and (max-width: 500px){
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .btn-ver{
+                opacity: 0;
+                color: white;
+            }
+            .btn-enlace{
+                opacity: 0;
+            }
+            &:hover{
+                background-color: #0000009d;
+                transition-duration: 0.4s;
+                .btn-ver{
+                    margin: 0 5px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    border: 4px solid white;
+                    background-color: #ffffff27;
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    -ms-border-radius: 50px;
+                    -o-border-radius: 50px;
+                    opacity: 1;
+                    transition-duration: 0.4s;
+                    transition-timing-function: ease-in;
+                    &:hover{
+                        color: black;
+                        background-color: white;
+                        transition-duration: 0.2s;
+                        transition-timing-function: ease-in;
+                    }
+                }
+                .btn-enlace{
+                    margin: 0 5px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    background-color: white;
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    -ms-border-radius: 50px;
+                    -o-border-radius: 50px;
+                    opacity: 1;
+                    transition-duration: 0.4s;
+                    transition-timing-function: ease-in;
+                    &:hover{
+                        color: white;
+                        background-color: black;
+                        transition-duration: 0.2s;
+                        transition-timing-function: ease-in;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    .my_navbar2{
+        margin: 0 auto;
+        .logo{
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+            .img-logo{
+                height: 100%;                
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                border: solid 3px white;
+            }
+        }
+        h1{
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    }
+}

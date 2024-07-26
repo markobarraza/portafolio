@@ -1,0 +1,430 @@
+<!doctype html>
+<html><head>
+<link rel="shortcut icon" href="icono.png" type="icono/png" />
+<meta charset="utf-8">
+<title>::: Semper :::</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<!-- CSS Code -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/forever.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="css/hover.css">
+<style type="text/css">
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<!-- JS Code -->
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/wow.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       200,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+	
+	
+</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				padding: 0,
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+					
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+		});
+	</script>
+</head>
+
+<body>
+<nav>
+  <div id="logo"></div>
+   <div id="lado">
+       <div id="nav">
+          <ul>
+            <li><a href="javascript:$.scrollTo('#home',800);" class="hvr-sweep-to-right"  ><img src="img/yo.png" alt="yo" width="52" height="52" class="nav"></a></li>
+            <li><a href="javascript:$.scrollTo('#contenido1',800);" class="hvr-sweep-to-right" ><img src="img/ilustraciones.png" alt="ilusraciones" width="52" height="52" class="nav"></a></li>
+            <li><a id="link-contact" href="#contact" class="hvr-sweep-to-right"><img src="img/contacto.png" alt="contacto" width="52" height="52" class="nav"></a></li>
+          </ul> 
+       </div>
+   </div>
+</nav>
+
+		<div id="home" class="content">
+<header>
+  <section id="carlos" data-type="background" data-speed="20" name="carlos">
+     <article class="contflecha">
+        <div id="datos">
+             <h1 class="titulo2 wow fadeInRight" data-wow-delay="0.5s">carlos semper</h1>
+             <h2 class="subtitulo wow fadeInRight" data-wow-delay="1s">Diseñador grafico - ilustrador</h2>
+        </div>
+        <div id="flecha">
+          <a href="javascript:$.scrollTo('#contenido1',800);" ><img src="img/flecha.png" class="wow bounce forever"></a>
+        </div>
+
+  </article>
+  </section>
+</header>
+         <div id="eme"><a href="http://marcobarraza.com/"><img src="img/eme.png" width="40" height="30" alt="eme"></a></div>
+
+<section>
+   <article>
+     <div id="contenido1">
+      <div id="veintitres">
+         <img src="img/veintitres.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Vuklav</p>
+             <a class="fancybox" href="img/23_b.jpg" data-fancybox-group="gallery"><p class="ingresar2mas  hvr-sweep-to-right              wow fadeInRight">Ver ilustración</p></a>
+         </div>
+     </div>
+     
+      <div id="veintidos">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Lada</p>
+             <a class="fancybox" href="img/22_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>
+        <img src="img/veintidos.png" alt="uno" width="700" height="230" class="derecha">
+     </div>
+      
+      <div id="veintiuno">
+         <img src="img/veintiuno.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Vucari</p>
+             <a class="fancybox" href="img/21_b.jpg" data-fancybox-group="gallery"><p class=" hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+     </div>
+     
+     <div id="veinte">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">triglov</p>
+             <a class="fancybox" href="img/20_b.jpg" data-fancybox-group="gallery"><p class=" hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>     
+        <img src="img/veinte.png" alt="uno" width="700" height="230" class="derecha"></div>
+        
+     <div id="diecinueve"><img src="img/diecinueve.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Baba Yaga</p>
+             <a class="fancybox" href="img/19_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+     </div>
+      
+      <div id="dieciocho">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Sandman</p>
+             <a class="fancybox" href="img/18_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>
+        <img src="img/dieciocho.png" alt="uno" width="700" class="derecha">
+     </div>
+     
+     <div id="diecisiete">
+         <img src="img/diecisiete.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Light Troops</p>
+             <a class="fancybox" href="img/17_b.jpg" data-fancybox-group="gallery"><p class=" hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+     </div>
+     
+
+     <div id="dieciseis">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Ur Nammu</p>
+             <a class="fancybox" href="img/16_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>     
+        <img src="img/dieciseis.png" alt="uno" width="700" height="230" class="derecha"></div>
+        
+
+      <div id="quince"><img src="img/quince.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Sumerian Spear</p>
+             <a class="fancybox" href="img/15_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+      </div>
+      
+     <div id="catorce">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Senaquerib</p>
+             <a class="fancybox" href="img/14_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>     
+        <img src="img/catorce.png" alt="uno" width="700" height="230" class="derecha"></div>
+        
+     <div id="trece">
+     <img src="img/trece.png" alt="uno" width="700" height="230" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Sumerian Shield</p>
+             <a class="fancybox" href="img/13_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+     </div>     
+
+      <div id="doce">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">The Razor-Hand Goblin</p>
+             <a class="fancybox" href="img/12_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>
+        <img src="img/doce.png" alt="uno" width="700" class="derecha">
+     </div>
+     
+      <div id="once">
+         <img src="img/once.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Casco Infanteria</p>
+             <a class="fancybox" href="img/11_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+     </div>
+     
+      <div id="diez">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Osiris</p>
+             <a class="fancybox" href="img/10_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>
+        <img src="img/diez.png" alt="uno" width="700" height="230" class="derecha">
+      </div>
+      
+      <div id="nueve"><img src="img/nueve.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Golpe de Ariete</p>
+             <a class="fancybox" href="img/9_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+      </div>
+      
+     <div id="ocho">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Falange Formation</p>
+            <a class="fancybox" href="img/8_b.jpg" data-fancybox-group="gallery"> <p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>     
+        <img src="img/ocho.png" alt="uno" width="700" height="230" class="derecha"></div>
+        
+     <div id="siete">
+     <img src="img/siete.png" alt="uno" width="700" height="230" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Egyptian Warrior</p>
+             <a class="fancybox" href="img/7_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+     </div>     
+
+      <div id="seis">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Zacha Elf</p>
+             <a class="fancybox" href="img/6_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>
+        <img src="img/seis.png" alt="uno" width="700" class="derecha">
+     </div>
+     
+      <div id="cinco">
+         <img src="img/cinco.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Forest Golem</p>
+             <a class="fancybox" href="img/5_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+     </div>
+     
+      <div id="cuatro">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Dwarf Rulez</p>
+             <a class="fancybox" href="img/4_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>
+        <img src="img/cuatro.png" alt="uno" width="700" height="230" class="derecha">
+      </div>
+      
+      <div id="tres">
+        <img src="img/tres.png" alt="uno" width="700" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas wow fadeInRight">Mulawee</p>
+            <a class="fancybox" href="img/3_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas wow fadeInRight">Ver ilustración</p></a>
+        </div>
+      </div>
+      
+     <div id="dos">
+        <div id="ingresar">
+             <p class="ingresar wow fadeInLeft">Magic Sandals</p>
+             <a class="fancybox" href="img/2_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2 wow fadeInLeft">Ver ilustración</p></a>
+        </div>     
+        <img src="img/dos.png" alt="uno" width="700" height="230" class="derecha"></div>
+        
+     <div id="uno">
+     <img src="img/uno.png" alt="uno" width="700" height="230" class="izquierda">
+         <div id="ingresarmas">
+             <p class="ingresarmas ">Kay</p>
+             <a class="fancybox" href="img/1_b.jpg" data-fancybox-group="gallery"><p class="hvr-sweep-to-right ingresar2mas">ilustraciones</p></a>
+        </div>
+     </div> 
+   	</div>    
+  </article>
+</section>
+		</div>
+        		<!-- Contact -->
+
+		<div id="contact" class="panel">
+                           <a id="link-home" href="#home"><div id="salir">X</div></a>
+	      <section class="formulario">
+           <h1 class="titulo">Contaco</h1>
+<form action="contacto.php" method="post">
+      <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required />
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required />
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+            <input id="submit" type="submit" name="submit" value="Enviar" />
+         </form>
+
+
+          </section>	  
+       </div>
+		<!-- /Contact -->
+
+</body>
+</html>
